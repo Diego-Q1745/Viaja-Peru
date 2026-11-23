@@ -1,0 +1,29 @@
+:root{--azul:#0E3B4F;--agua:#1F7A8C;--ocre:#E0A526;--fondo:#F6F8F7;--texto:#1D2A30}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--texto);background:var(--fondo);line-height:1.6}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;color:var(--azul)}
+a{color:var(--agua)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--ocre);outline-offset:3px}
+.wrap{max-width:920px;margin:0 auto;padding:0 1.25rem}
+header{background:var(--azul)}
+header .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.5rem;padding-top:1rem;padding-bottom:1rem}
+.logo{font-family:Georgia,serif;font-size:1.4rem;color:#fff;text-decoration:none}
+nav a{color:#fff;margin-left:1.25rem;text-decoration:none}
+nav a:hover,nav a[aria-current="page"]{text-decoration:underline;text-decoration-color:var(--ocre);text-underline-offset:6px}
+.hero{background:linear-gradient(135deg,var(--azul),var(--agua));color:#fff;padding:4rem 0}
+.hero h1{color:#fff;font-size:clamp(2rem,6vw,3.2rem);margin:0 0 1rem;max-width:18ch}
+.hero p{max-width:50ch;margin:0 0 1.5rem;font-size:1.1rem}
+.btn{display:inline-block;background:var(--ocre);color:#1D2A30;padding:.75rem 1.5rem;border-radius:6px;font-weight:600;text-decoration:none}
+.btn:hover{background:#f0b83a}
+main section{padding:2.5rem 0}
+.rutas{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));padding:0;list-style:none}
+.rutas li{background:#fff;border-left:6px solid var(--agua);padding:1rem 1.25rem}
+.rutas h3{margin:0 0 .25rem}
+.destino{display:grid;grid-template-columns:140px 1fr;gap:1.25rem;align-items:start;margin-bottom:1.5rem}
+.destino .color{height:110px;border-radius:6px}
+.c1{background:linear-gradient(135deg,#3f6b4f,#c9a94b)}.c2{background:linear-gradient(135deg,#7a3b2e,#d98a4a)}
+.c3{background:linear-gradient(135deg,#1F7A8C,#9fd3dc)}.c4{background:linear-gradient(135deg,#2f4858,#86a5a0)}
+.destino h2{margin:0 0 .25rem;font-size:1.4rem}
+.destino p{margin:.25rem 0}
+footer{background:var(--azul);color:#fff;padding:1.5rem 0;margin-top:2rem;text-align:center;font-size:.9rem}
+@media (max-width:600px){.destino{grid-template-columns:1fr}nav a{margin:0 1rem 0 0}}
